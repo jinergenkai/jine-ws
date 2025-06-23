@@ -1,0 +1,2073 @@
+{
+  "data": [
+    {
+      "id": 276048484,
+      "sku": "6508973820034",
+      "name": "Mũ Bảo Hiểm LƯỠI TRAI Napoli Nhám Nửa Đầu Cao Cấp [CHÍNH HÃNG][FREESHIP] Nón Bảo Hiểm 1/2",
+      "url_key": "mu-bao-hiem-luoi-trai-napoli-nham-nua-dau-cao-cap-chinh-hang-freeship-non-bao-hiem-1-2-p276048484",
+      "url_path": "mu-bao-hiem-luoi-trai-napoli-nham-nua-dau-cao-cap-chinh-hang-freeship-non-bao-hiem-1-2-p276048484.html?spid=276048496",
+      "availability": 1,
+      "seller_id": 357299,
+      "seller_name": "Nón Bảo Hiểm Napoli",
+      "brand_id": 145925,
+      "brand_name": "Napoli",
+      "price": 133900,
+      "original_price": 195000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "NAPOLI",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "icon": "https://salt.tikicdn.com/cache/w96/ts/tka/26/a2/90/0663718b1c04d15a46bf0f23874a7e01.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao chiều thứ 3, 17/12"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "5 Màu sắc"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 61100,
+      "discount_rate": 31,
+      "rating_average": 5,
+      "review_count": 1,
+      "category_ids": [
+        8594, 24832, 11906, 69770, 69783, 69795, 69811, 69822, 69833, 69851,
+        11908, 46190
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11908/46190",
+      "primary_category_name": "Mũ 1/2",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/ed/5d/33/455adbbcadc846d20f9bf7a0d7477922.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 276048496,
+      "seller_product_sku": "6508973820034",
+      "master_product_sku": "8051401624260",
+      "quantity_sold": {
+        "text": "Đã bán 6",
+        "value": 6
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "earliest_delivery_estimate": "2024-12-17 13:00:00",
+      "fastest_delivery_time": "2024-12-17 18:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-aHyaDzHK",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 276048484,
+            "spid": 276048496,
+            "quantity_sold": 6,
+            "delivery_info_badge_text": "Giao chiều thứ 3, 17/12",
+            "delivery_date": "2024/12/17",
+            "astra_reward": 0,
+            "price": 139900,
+            "discount_rate": 28,
+            "rating": 5,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 1,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "NONE",
+          "seller_id": 357299,
+          "all_time_quantity_sold": 6,
+          "brand_name": "Napoli",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "category_l4_name": "Mũ bảo hiểm xe máy",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "8051401624260",
+          "seller_product_id": 276048496,
+          "seller_product_sku": "6508973820034",
+          "number_of_reviews": 1,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 139900,
+          "primary_category_name": "Mũ 1/2",
+          "product_rating": 5,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 3.665,
+          "earliest_delivery_estimate": 3.457,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "layout": "grid_view",
+          "variant": true,
+          "discounted_by_rule_ids": "3294222",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": true
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": true
+    },
+    {
+      "id": 275997734,
+      "sku": "7945614472462",
+      "name": "Mũ Bảo Hiểm Napoli Sơn Carbon Nửa Đầu N088 [CHÍNH HÃNG] [FREESHIP] - Nón Bảo Hiểm NS 1/2 Sơn Nhám Cao Cấp Chống Trầy",
+      "url_key": "mu-bao-hiem-napoli-son-carbon-nua-dau-n088-chinh-hang-freeship-non-bao-hiem-ns-1-2-son-nham-cao-cap-chong-tray-p275997734",
+      "url_path": "mu-bao-hiem-napoli-son-carbon-nua-dau-n088-chinh-hang-freeship-non-bao-hiem-ns-1-2-son-nham-cao-cap-chong-tray-p275997734.html?spid=275997740",
+      "availability": 1,
+      "seller_id": 357299,
+      "seller_name": "Nón Bảo Hiểm Napoli",
+      "brand_id": 145925,
+      "brand_name": "Napoli",
+      "price": 154900,
+      "original_price": 220000,
+      "badges_new": [
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "tikinow",
+          "icon": "https://salt.tikicdn.com/ts/tka/a8/31/b6/802e2c99dcce64c67aa2648edb15dd25.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao siêu tốc 2h"
+        },
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "bottom_right",
+          "type": "icon_badge",
+          "code": "video_icon",
+          "icon": "https://salt.tikicdn.com/ts/upload/d5/f3/6f/fdd40db52ff4afe497d0c2240dcfd25b.png",
+          "icon_width": 28,
+          "icon_height": 28
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "NAPOLI",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "3 Màu sắc"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 65100,
+      "discount_rate": 30,
+      "rating_average": 5,
+      "review_count": 2,
+      "category_ids": [
+        8594, 24832, 11906, 69770, 69783, 69795, 69811, 69822, 69833, 69851,
+        11908, 46190
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11908/46190",
+      "primary_category_name": "Mũ 1/2",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/33/13/89/d047305e9621da24b3e16a74b38f956a.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 275997740,
+      "seller_product_sku": "7945614472462",
+      "master_product_sku": "9925704195712",
+      "video_url": "https://salt.tikicdn.com/ts/video/b0/83/d9/90873cc8528a161eeecd44a79f39ac6e.mp4",
+      "quantity_sold": {
+        "text": "Đã bán 16",
+        "value": 16
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "is_tikinow_delivery": true,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-p3eKfjJx",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275997734,
+            "spid": 275997740,
+            "quantity_sold": 16,
+            "astra_reward": 0,
+            "price": 160900,
+            "discount_rate": 27,
+            "rating": 5,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 1,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 2,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "NONE",
+          "seller_id": 357299,
+          "all_time_quantity_sold": 16,
+          "brand_name": "Napoli",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "category_l4_name": "Mũ bảo hiểm xe máy",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "9925704195712",
+          "seller_product_id": 275997740,
+          "seller_product_sku": "7945614472462",
+          "number_of_reviews": 2,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 160900,
+          "primary_category_name": "Mũ 1/2",
+          "product_rating": 5,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 0,
+          "earliest_delivery_estimate": 0,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0.21,
+          "layout": "grid_view",
+          "variant": true,
+          "discounted_by_rule_ids": "3294222",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": true
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": true
+    },
+    {
+      "id": 275975155,
+      "sku": "4114396339328",
+      "name": "Mũ Bảo Hiểm Napoli 1/2 [FREESHIP] [CHÍNH HÃNG] - Nón Bảo Hiểm Nửa Đầu Napoli Harley N04",
+      "url_key": "mu-bao-hiem-napoli-1-2-freeship-chinh-hang-non-bao-hiem-nua-dau-napoli-harley-n04-p275975155",
+      "url_path": "mu-bao-hiem-napoli-1-2-freeship-chinh-hang-non-bao-hiem-nua-dau-napoli-harley-n04-p275975155.html?spid=275975157",
+      "availability": 1,
+      "seller_id": 357299,
+      "seller_name": "Nón Bảo Hiểm Napoli",
+      "brand_id": 145925,
+      "brand_name": "Napoli",
+      "price": 163900,
+      "original_price": 250000,
+      "badges_new": [
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "tikinow",
+          "icon": "https://salt.tikicdn.com/ts/tka/a8/31/b6/802e2c99dcce64c67aa2648edb15dd25.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao siêu tốc 2h"
+        },
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "bottom_right",
+          "type": "icon_badge",
+          "code": "video_icon",
+          "icon": "https://salt.tikicdn.com/ts/upload/d5/f3/6f/fdd40db52ff4afe497d0c2240dcfd25b.png",
+          "icon_width": 28,
+          "icon_height": 28
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "NAPOLI",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "9 Màu sắc"
+            },
+            {
+              "value": "2 Phụ kiện"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 86100,
+      "discount_rate": 34,
+      "rating_average": 5,
+      "review_count": 3,
+      "category_ids": [
+        8594, 24832, 11906, 69770, 69783, 69795, 69811, 69822, 69833, 69851,
+        11908, 46190
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11908/46190",
+      "primary_category_name": "Mũ 1/2",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/56/3c/88/1f806f9a0428d7bff5d0ed566a1d2bae.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 275975157,
+      "seller_product_sku": "4114396339328",
+      "master_product_sku": "2817642016000",
+      "video_url": "https://salt.tikicdn.com/ts/video/38/b5/15/b163e692cec59bb10330ce99821f03a3.mp4",
+      "quantity_sold": {
+        "text": "Đã bán 30",
+        "value": 30
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "is_tikinow_delivery": true,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-e0QvpPg1",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275975155,
+            "spid": 275975157,
+            "quantity_sold": 30,
+            "astra_reward": 0,
+            "price": 169900,
+            "discount_rate": 32,
+            "rating": 5,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 1,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 3,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "NONE",
+          "seller_id": 357299,
+          "all_time_quantity_sold": 30,
+          "brand_name": "Napoli",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "category_l4_name": "Mũ bảo hiểm xe máy",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "2817642016000",
+          "seller_product_id": 275975157,
+          "seller_product_sku": "4114396339328",
+          "number_of_reviews": 3,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 169900,
+          "primary_category_name": "Mũ 1/2",
+          "product_rating": 5,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 0,
+          "earliest_delivery_estimate": 0,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0.21,
+          "layout": "grid_view",
+          "variant": true,
+          "discounted_by_rule_ids": "3294222",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": true
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": true
+    },
+    {
+      "id": 275803950,
+      "sku": "5596024446588",
+      "name": "Mũ bảo hiểm xe máy 1/2 Rona R5 sơn trơn, nón freesize form nhỏ gọn chính hãng",
+      "url_key": "mu-bao-hiem-xe-may-1-2-rona-r5-son-tron-non-freesize-form-nho-gon-chinh-hang-p275803950",
+      "url_path": "mu-bao-hiem-xe-may-1-2-rona-r5-son-tron-non-freesize-form-nho-gon-chinh-hang-p275803950.html?spid=275803958",
+      "availability": 1,
+      "seller_id": 134712,
+      "seller_name": "NONTRUM OFFICIAL STORE ",
+      "brand_id": 289403,
+      "brand_name": "RONA",
+      "price": 120000,
+      "original_price": 300000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "freegift_items",
+          "text": "Quà tặng"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "RONA",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "icon": "https://salt.tikicdn.com/cache/w96/ts/tka/26/a2/90/0663718b1c04d15a46bf0f23874a7e01.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao chiều mai"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "icon_text_promotion",
+          "code": "text_deal",
+          "text_color": "#808089",
+          "promotions": [
+            {
+              "icon": "https://salt.tikicdn.com/ts/upload/56/12/53/7e524d144a7251570f53c968526c68bd.png",
+              "icon_height": 16,
+              "icon_width": 16,
+              "text": "Giảm 5K"
+            }
+          ]
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "images_text_promotion",
+          "code": "gift_product",
+          "text": "1 quà",
+          "text_color": "#808089",
+          "images": [
+            {
+              "image_url": "https://salt.tikicdn.com/cache/128x128/ts/product/4d/3f/19/50cbfb5d3ee1c21479dd3bfe3120cded.jpg",
+              "image_height": 32,
+              "image_width": 32
+            }
+          ]
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "4 Màu sắc"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 180000,
+      "discount_rate": 60,
+      "rating_average": 0,
+      "review_count": 0,
+      "category_ids": [
+        8594, 24832, 11906, 69682, 69695, 69707, 69770, 69783, 69795, 69811,
+        69833, 69844, 69849, 69851, 11908, 46190
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11908/46190",
+      "primary_category_name": "Mũ 1/2",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/ae/7d/d9/cde3ec97fc53b5dba519a18c203cf3c4.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 275803958,
+      "seller_product_sku": "5596024446588",
+      "master_product_sku": "6785177749711",
+      "quantity_sold": {
+        "text": "Đã bán 1",
+        "value": 1
+      },
+      "shippable": true,
+      "isGiftAvailable": true,
+      "earliest_delivery_estimate": "2024-12-15 13:00:00",
+      "fastest_delivery_time": "2024-12-15 18:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-Qp8B98V7",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275803950,
+            "spid": 275803958,
+            "quantity_sold": 1,
+            "delivery_info_badge_text": "Giao chiều mai",
+            "astra_reward": 0,
+            "price": 120000,
+            "discount_rate": 60,
+            "rating": 0,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 4,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "OFFICIAL_STORE",
+          "seller_id": 134712,
+          "all_time_quantity_sold": 1,
+          "brand_name": "RONA",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "category_l4_name": "Mũ bảo hiểm xe máy",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": true,
+          "master_product_sku": "6785177749711",
+          "seller_product_id": 275803958,
+          "seller_product_sku": "5596024446588",
+          "number_of_reviews": 0,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 120000,
+          "primary_category_name": "Mũ 1/2",
+          "product_rating": 0,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 1.665,
+          "earliest_delivery_estimate": 1.457,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "variant": true,
+          "gift_rule_ids": "155297",
+          "ineligible_coupon_rule_id": 3313896,
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": false
+        }
+      },
+      "is_high_price_penalty": false,
+      "is_top_brand": false
+    },
+    {
+      "id": 275711929,
+      "sku": "9921505485335",
+      "name": "Mũ Bảo Hiểm Fullface AGU A138 Trơn - Tặng Túi Vải - Hàng Chính Hãng Bảo Hành 12 Tháng - Sản Phẩm Thời Trang Và Cao Cấp",
+      "url_key": "mu-bao-hiem-fullface-agu-a138-tron-tang-tui-vai-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275711929",
+      "url_path": "mu-bao-hiem-fullface-agu-a138-tron-tang-tui-vai-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275711929.html?spid=275711961",
+      "availability": 1,
+      "seller_id": 356550,
+      "seller_name": "AGU Helmet Official",
+      "brand_id": 219819,
+      "brand_name": "AGU",
+      "price": 334000,
+      "original_price": 520000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "bottom_right",
+          "type": "icon_badge",
+          "code": "video_icon",
+          "icon": "https://salt.tikicdn.com/ts/upload/d5/f3/6f/fdd40db52ff4afe497d0c2240dcfd25b.png",
+          "icon_width": 28,
+          "icon_height": 28
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "freegift_items",
+          "text": "Quà tặng"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "AGU",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "icon": "https://salt.tikicdn.com/cache/w96/ts/tka/26/a2/90/0663718b1c04d15a46bf0f23874a7e01.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao chiều thứ 3, 17/12"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "images_text_promotion",
+          "code": "gift_product",
+          "text": "1 quà",
+          "text_color": "#808089",
+          "images": [
+            {
+              "image_url": "https://salt.tikicdn.com/cache/128x128/ts/product/0c/c5/06/02f551e15b3ecd6f08f37f3204f48804.jpg",
+              "image_height": 32,
+              "image_width": 32
+            }
+          ]
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "6 Màu sắc"
+            },
+            {
+              "value": "8 Size nón + loại kính"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 186000,
+      "discount_rate": 36,
+      "rating_average": 0,
+      "review_count": 0,
+      "category_ids": [
+        8594, 24832, 11906, 69695, 69770, 69783, 69795, 69811, 69822, 69833,
+        69851, 11908, 46186
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11908/46186",
+      "primary_category_name": "Mũ Fullface",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/8b/ef/24/e30e5d21f99817ba7098be26766a1cb2.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 275711961,
+      "seller_product_sku": "9921505485335",
+      "master_product_sku": "9295101518851",
+      "video_url": "https://salt.tikicdn.com/ts/video/25/35/14/a8ee9b316b2807daa404b66f658b9e67.mp4",
+      "quantity_sold": {
+        "text": "Đã bán 1",
+        "value": 1
+      },
+      "shippable": true,
+      "isGiftAvailable": true,
+      "earliest_delivery_estimate": "2024-12-17 13:00:00",
+      "fastest_delivery_time": "2024-12-17 18:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-ryLvngOQ",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275711929,
+            "spid": 275711961,
+            "quantity_sold": 1,
+            "delivery_info_badge_text": "Giao chiều thứ 3, 17/12",
+            "delivery_date": "2024/12/17",
+            "astra_reward": 0,
+            "price": 349000,
+            "discount_rate": 33,
+            "rating": 0,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 5,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "OFFICIAL_STORE",
+          "seller_id": 356550,
+          "all_time_quantity_sold": 1,
+          "brand_name": "AGU",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "category_l4_name": "Mũ bảo hiểm xe máy",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": true,
+          "master_product_sku": "9295101518851",
+          "seller_product_id": 275711961,
+          "seller_product_sku": "9921505485335",
+          "number_of_reviews": 0,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 349000,
+          "primary_category_name": "Mũ Fullface",
+          "product_rating": 0,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 3.665,
+          "earliest_delivery_estimate": 3.457,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "layout": "grid_view",
+          "variant": true,
+          "gift_rule_ids": "152303",
+          "discounted_by_rule_ids": "3296333",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": true
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": true
+    },
+    {
+      "id": 275692742,
+      "sku": "2657162466904",
+      "name": "Mũ Bảo Hiểm Fullface AGU A138 Tem - Hàng Chính Hãng Bảo Hành 12 Tháng - Sản Phẩm Thời Trang Và Cao Cấp",
+      "url_key": "mu-bao-hiem-fullface-agu-a138-tem-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275692742",
+      "url_path": "mu-bao-hiem-fullface-agu-a138-tem-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275692742.html?spid=275722019",
+      "availability": 1,
+      "seller_id": 264452,
+      "seller_name": "KLT HELMET",
+      "brand_id": 219819,
+      "brand_name": "AGU",
+      "price": 367630,
+      "original_price": 590000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "AGU",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "icon": "https://salt.tikicdn.com/cache/w96/ts/tka/26/a2/90/0663718b1c04d15a46bf0f23874a7e01.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao chiều mai"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "15 Màu sắc"
+            },
+            {
+              "value": "2 Size nón"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 222370,
+      "discount_rate": 38,
+      "rating_average": 0,
+      "review_count": 0,
+      "category_ids": [
+        8594, 24832, 11906, 69695, 69770, 69783, 69795, 69811, 69822, 69833,
+        69851, 11908, 46186
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11908/46186",
+      "primary_category_name": "Mũ Fullface",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/80/b8/5b/6f84b56a51f46fdf811568734ebeb6dc.png",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 275722019,
+      "seller_product_sku": "2657162466904",
+      "master_product_sku": "3467868725915",
+      "quantity_sold": {
+        "text": "Đã bán 2",
+        "value": 2
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "earliest_delivery_estimate": "2024-12-15 13:00:00",
+      "fastest_delivery_time": "2024-12-15 18:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-Se3BOZJb",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275692742,
+            "spid": 275722019,
+            "quantity_sold": 2,
+            "delivery_info_badge_text": "Giao chiều mai",
+            "astra_reward": 0,
+            "price": 379000,
+            "discount_rate": 36,
+            "rating": 0,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 6,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "NONE",
+          "seller_id": 264452,
+          "all_time_quantity_sold": 2,
+          "brand_name": "AGU",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "category_l4_name": "Mũ bảo hiểm xe máy",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "3467868725915",
+          "seller_product_id": 275722019,
+          "seller_product_sku": "2657162466904",
+          "number_of_reviews": 0,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 379000,
+          "primary_category_name": "Mũ Fullface",
+          "product_rating": 0,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 1.665,
+          "earliest_delivery_estimate": 1.457,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "layout": "grid_view",
+          "variant": true,
+          "discounted_by_rule_ids": "3296496",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": true
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": true
+    },
+    {
+      "id": 275687098,
+      "sku": "1901040598182",
+      "name": "Mũ Bảo Hiểm Trẻ Em 1/2 V&S VS03KB Hàng Chính Hãng Bảo Hành 12 Tháng Sản Phẩm Thời Trang Và Cao Cấp",
+      "url_key": "mu-bao-hiem-tre-em-1-2-v-s-vs03kb-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275687098",
+      "url_path": "mu-bao-hiem-tre-em-1-2-v-s-vs03kb-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275687098.html?spid=276284942",
+      "availability": 1,
+      "seller_id": 264452,
+      "seller_name": "KLT HELMET",
+      "brand_id": 564019,
+      "brand_name": "V&S",
+      "price": 144530,
+      "original_price": 200000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "V&S",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "icon": "https://salt.tikicdn.com/cache/w96/ts/tka/26/a2/90/0663718b1c04d15a46bf0f23874a7e01.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao chiều mai"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "4 Màu sắc"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 55470,
+      "discount_rate": 28,
+      "rating_average": 0,
+      "review_count": 0,
+      "category_ids": [
+        8594, 24832, 11906, 69695, 69770, 69783, 69795, 69811, 69822, 69833,
+        69851, 11912
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11912",
+      "primary_category_name": "Mũ bảo hiểm trẻ em",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/d8/76/54/6ec4756560a3d0bb317e01d0ab37b0d5.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 276284942,
+      "seller_product_sku": "1901040598182",
+      "master_product_sku": "3643903332815",
+      "quantity_sold": {
+        "text": "Đã bán 1",
+        "value": 1
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "earliest_delivery_estimate": "2024-12-15 13:00:00",
+      "fastest_delivery_time": "2024-12-15 18:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-7sQf88CQ",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275687098,
+            "spid": 276284942,
+            "quantity_sold": 1,
+            "delivery_info_badge_text": "Giao chiều mai",
+            "astra_reward": 0,
+            "price": 149000,
+            "discount_rate": 26,
+            "rating": 0,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 7,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "NONE",
+          "seller_id": 264452,
+          "all_time_quantity_sold": 1,
+          "brand_name": "V&S",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "3643903332815",
+          "seller_product_id": 276284942,
+          "seller_product_sku": "1901040598182",
+          "number_of_reviews": 0,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 149000,
+          "primary_category_name": "Mũ bảo hiểm trẻ em",
+          "product_rating": 0,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 1.665,
+          "earliest_delivery_estimate": 1.457,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "layout": "grid_view",
+          "variant": true,
+          "discounted_by_rule_ids": "3296496",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": false
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": false
+    },
+    {
+      "id": 275604041,
+      "sku": "7110282665699",
+      "name": "Mũ Bảo Hiểm Trẻ Em 1/2 V&S VS03KB - Hàng Chính Hãng Bảo Hành 12 Tháng - Sản Phẩm Thời Trang Và Cao Cấp",
+      "url_key": "mu-bao-hiem-tre-em-1-2-v-s-vs03kb-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275604041",
+      "url_path": "mu-bao-hiem-tre-em-1-2-v-s-vs03kb-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275604041.html?spid=275604047",
+      "availability": 1,
+      "seller_id": 152370,
+      "seller_name": "V&S Official Store",
+      "brand_id": 564019,
+      "brand_name": "V&S",
+      "price": 144530,
+      "original_price": 180000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "V&S",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "icon": "https://salt.tikicdn.com/cache/w96/ts/tka/26/a2/90/0663718b1c04d15a46bf0f23874a7e01.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao chiều mai"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "4 Màu sắc"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 35470,
+      "discount_rate": 20,
+      "rating_average": 4.5,
+      "review_count": 2,
+      "category_ids": [
+        8594, 24832, 11906, 69585, 69598, 69610, 69770, 69783, 69811, 69822,
+        69833, 69851, 11912
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11912",
+      "primary_category_name": "Mũ bảo hiểm trẻ em",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/84/e9/b8/b31b8ce40164ba3c56cd4d11eeb5567f.png",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 275604047,
+      "seller_product_sku": "7110282665699",
+      "master_product_sku": "7300430211339",
+      "quantity_sold": {
+        "text": "Đã bán 3",
+        "value": 3
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "earliest_delivery_estimate": "2024-12-15 13:00:00",
+      "fastest_delivery_time": "2024-12-15 18:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-eL9dTdDW",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275604041,
+            "spid": 275604047,
+            "quantity_sold": 3,
+            "delivery_info_badge_text": "Giao chiều mai",
+            "astra_reward": 0,
+            "price": 149000,
+            "discount_rate": 17,
+            "rating": 4.5,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 8,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "OFFICIAL_STORE",
+          "seller_id": 152370,
+          "all_time_quantity_sold": 3,
+          "brand_name": "V&S",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "7300430211339",
+          "seller_product_id": 275604047,
+          "seller_product_sku": "7110282665699",
+          "number_of_reviews": 2,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 149000,
+          "primary_category_name": "Mũ bảo hiểm trẻ em",
+          "product_rating": 4.5,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 1.665,
+          "earliest_delivery_estimate": 1.457,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "layout": "grid_view",
+          "variant": true,
+          "discounted_by_rule_ids": "3296497",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": false
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": false
+    },
+    {
+      "id": 275603508,
+      "sku": "8039951339125",
+      "name": "Mũ Bảo Hiểm Trẻ Em 1/2 V&S VS01K -  Hàng Chính Hãng Bảo Hành 12 Tháng - Sản Phẩm Thời Trang Và Cao Cấp",
+      "url_key": "mu-bao-hiem-tre-em-1-2-v-s-vs01k-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275603508",
+      "url_path": "mu-bao-hiem-tre-em-1-2-v-s-vs01k-hang-chinh-hang-bao-hanh-12-thang-san-pham-thoi-trang-va-cao-cap-p275603508.html?spid=275603514",
+      "availability": 1,
+      "seller_id": 152370,
+      "seller_name": "V&S Official Store",
+      "brand_id": 564019,
+      "brand_name": "V&S",
+      "price": 150350,
+      "original_price": 200000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "under_rating",
+          "type": "under_rating_text",
+          "code": "option_color",
+          "text": "Nhiều màu"
+        },
+        {
+          "placement": "under_product_image_2",
+          "type": "icon_badge",
+          "code": "is_hero",
+          "icon": "https://salt.tikicdn.com/ts/upload/8d/6b/78/a7e5d0f7784134b9b71b5d6ecfa84fc9.png",
+          "icon_width": 103,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "V&S",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "icon": "https://salt.tikicdn.com/cache/w96/ts/tka/26/a2/90/0663718b1c04d15a46bf0f23874a7e01.png",
+          "icon_width": 32,
+          "icon_height": 16,
+          "text": "Giao chiều mai"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "2 Màu sắc"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/21/c9/ce/ecf520f4346274799396496b3cbbf7d8.png"
+        },
+        {
+          "placement": "text_overlay_product_image",
+          "type": "text_badge",
+          "code": "event_badge",
+          "text": "12.12",
+          "style": {
+            "text_color": "#FFF0F1",
+            "background": "#D93843",
+            "border_color": "#FFFFFF"
+          }
+        }
+      ],
+      "discount": 49650,
+      "discount_rate": 25,
+      "rating_average": 5,
+      "review_count": 1,
+      "category_ids": [
+        8594, 24832, 11906, 69585, 69598, 69610, 69811, 69822, 69833, 69851,
+        11912
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11912",
+      "primary_category_name": "Mũ bảo hiểm trẻ em",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/15/1f/6b/b9c5880c216b2e194cbe5011732b0c74.png",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 275603514,
+      "seller_product_sku": "8039951339125",
+      "master_product_sku": "3343714683783",
+      "quantity_sold": {
+        "text": "Đã bán 1",
+        "value": 1
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "earliest_delivery_estimate": "2024-12-15 13:00:00",
+      "fastest_delivery_time": "2024-12-15 18:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 0,
+      "tiki_hero": 1,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-hMDvwNfY",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 275603508,
+            "spid": 275603514,
+            "quantity_sold": 1,
+            "delivery_info_badge_text": "Giao chiều mai",
+            "astra_reward": 0,
+            "price": 155000,
+            "discount_rate": 23,
+            "rating": 5,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 9,
+            "tiki_verified": 0,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "OFFICIAL_STORE",
+          "seller_id": 152370,
+          "all_time_quantity_sold": 1,
+          "brand_name": "V&S",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "3343714683783",
+          "seller_product_id": 275603514,
+          "seller_product_sku": "8039951339125",
+          "number_of_reviews": 1,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 155000,
+          "primary_category_name": "Mũ bảo hiểm trẻ em",
+          "product_rating": 5,
+          "search_rank": 0,
+          "tiki_verified": 0,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 1.665,
+          "earliest_delivery_estimate": 1.457,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "layout": "grid_view",
+          "variant": true,
+          "discounted_by_rule_ids": "3296497",
+          "is_hero": true,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": false
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": false
+    },
+    {
+      "id": 273453686,
+      "sku": "8577917076710",
+      "name": "Mũ bảo hiểm nửa đầu lỗ thông gió chính hãng NÓN SƠN TG-XM181",
+      "url_key": "mu-bao-hiem-nua-dau-lo-thong-gio-chinh-hang-non-son-tg-xm181-p273453686",
+      "url_path": "mu-bao-hiem-nua-dau-lo-thong-gio-chinh-hang-non-son-tg-xm181-p273453686.html?spid=273453692",
+      "availability": 1,
+      "seller_id": 1227,
+      "seller_name": "Thời Trang Nón Sơn Official",
+      "brand_id": 153769,
+      "brand_name": "Nón Sơn",
+      "price": 367000,
+      "original_price": 650000,
+      "badges_new": [
+        {
+          "placement": "under_product_image",
+          "type": "icon_badge",
+          "code": "authentic_brand",
+          "icon": "https://salt.tikicdn.com/ts/tka/69/cf/22/1be823299ae34c7ddcd922e73abd4909.png",
+          "icon_width": 89,
+          "icon_height": 20
+        },
+        {
+          "placement": "above_product_name",
+          "type": "text_above_product_name",
+          "code": "brand_name",
+          "text": "NÓN SƠN",
+          "text_color": "#808089"
+        },
+        {
+          "placement": "delivery_info",
+          "type": "delivery_info_badge",
+          "code": "delivery_info_badge",
+          "text": "Giao thứ 3, 17/12"
+        },
+        {
+          "placement": "under_rating_v2",
+          "type": "text_box",
+          "code": "variant_count",
+          "text_color": "#808089",
+          "arr_text": [
+            {
+              "value": "4 Size"
+            }
+          ]
+        }
+      ],
+      "badges_v3": [
+        {
+          "placement": "badge_overlay_product_image",
+          "type": "image_badge",
+          "code": "product_image_badge",
+          "image": "https://salt.tikicdn.com/ts/upload/f7/9e/83/ab28365ea395893fe5abac88b5103444.png"
+        }
+      ],
+      "discount": 283000,
+      "discount_rate": 44,
+      "rating_average": 5,
+      "review_count": 2,
+      "category_ids": [
+        61515, 8594, 65565, 24832, 65591, 11906, 65640, 69536, 69811, 69822,
+        69833, 69844, 69849, 11908, 65645, 46190, 65646
+      ],
+      "primary_category_path": "1/2/8594/24832/11906/11908/46190",
+      "primary_category_name": "Mũ 1/2",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/eb/9e/aa/2b5644ee9ae063ca740c1eddbcaa40d5.jpg",
+      "thumbnail_width": 280,
+      "thumbnail_height": 280,
+      "productset_id": 159,
+      "seller_product_id": 273453692,
+      "seller_product_sku": "8577917076710",
+      "master_product_sku": "1878850638271",
+      "quantity_sold": {
+        "text": "Đã bán 13",
+        "value": 13
+      },
+      "shippable": true,
+      "isGiftAvailable": false,
+      "fastest_delivery_time": "2024-12-17 19:00:00",
+      "order_route": "same_province",
+      "is_tikinow_delivery": false,
+      "is_nextday_delivery": false,
+      "is_from_official_store": false,
+      "is_authentic": 1,
+      "tiki_verified": 1,
+      "tiki_hero": 0,
+      "origin": "Việt Nam",
+      "freeship_campaign": "freeship_xtra",
+      "impression_info": [
+        {
+          "impression_id": "thanos-Cx9iThzfsYCHmISW-3JoFQY5u",
+          "metadata": {
+            "request_id": "Cx9iThzfsYCHmISW",
+            "params": {
+              "q": "nón bảo hiểm",
+              "sort": "top_seller",
+              "page": "1"
+            },
+            "delivery_zone": "VN039006001",
+            "query": "nón bảo hiểm",
+            "mpid": 273453686,
+            "spid": 273453692,
+            "quantity_sold": 13,
+            "delivery_info_badge_text": "Giao thứ 3, 17/12",
+            "delivery_date": "2024/12/17",
+            "astra_reward": 0,
+            "price": 367000,
+            "discount_rate": 44,
+            "rating": 5,
+            "is_ad": 0,
+            "is_official_store": 0,
+            "is_trusted_store": 0,
+            "is_tikinow": 0,
+            "is_tikipro": 0,
+            "is_astra_plus": 0,
+            "position": 10,
+            "tiki_verified": 1,
+            "flags": {}
+          }
+        }
+      ],
+      "visible_impression_info": {
+        "amplitude": {
+          "seller_type": "OFFICIAL_STORE",
+          "seller_id": 1227,
+          "all_time_quantity_sold": 13,
+          "brand_name": "Nón Sơn",
+          "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+          "category_l2_name": "Phụ kiện - Chăm sóc xe",
+          "category_l3_name": "Mũ bảo hiểm",
+          "category_l4_name": "Mũ bảo hiểm xe máy",
+          "is_best_offer_available": false,
+          "is_flash_deal": false,
+          "is_gift_available": false,
+          "master_product_sku": "1878850638271",
+          "seller_product_id": 273453692,
+          "seller_product_sku": "8577917076710",
+          "number_of_reviews": 2,
+          "order_route": "same_province",
+          "partner_rewards_amount": 0,
+          "price": 367000,
+          "primary_category_name": "Mũ 1/2",
+          "product_rating": 5,
+          "search_rank": 0,
+          "tiki_verified": 1,
+          "is_authentic": 1,
+          "standard_delivery_estimate": 3.707,
+          "earliest_delivery_estimate": 0,
+          "tikipro_delivery_estimate": 0,
+          "tikinow_delivery_estimate": 0,
+          "layout": "grid_view",
+          "variant": true,
+          "is_hero": false,
+          "is_imported": false,
+          "origin": "Việt Nam",
+          "is_high_price_penalty": false,
+          "deboosted_high_price_diff_position": 0,
+          "joined_strategy_rerank": false,
+          "is_freeship_xtra": true,
+          "is_top_brand": false
+        }
+      },
+      "layout_type": "grid_view",
+      "is_high_price_penalty": false,
+      "is_top_brand": false
+    }
+  ],
+  "paging": {
+    "total": 2000,
+    "total_text": "10000+",
+    "per_page": 10,
+    "current_page": 1,
+    "last_page": 200,
+    "from": 1,
+    "to": 10
+  },
+  "widgets": [],
+  "sort_options": [
+    {
+      "display_value": "Phổ biến",
+      "query_value": "default",
+      "selected": false
+    },
+    {
+      "display_value": "Bán chạy",
+      "query_value": "top_seller",
+      "selected": true
+    },
+    {
+      "display_value": "Hàng mới",
+      "query_value": "newest",
+      "selected": false
+    },
+    {
+      "display_value": "Giá thấp đến cao",
+      "query_value": "price,asc",
+      "selected": false
+    },
+    {
+      "display_value": "Giá cao đến thấp",
+      "query_value": "price,desc",
+      "selected": false
+    }
+  ],
+  "experiment_variants": {},
+  "model_name": "NoLtrModel",
+  "amplitude": {
+    "number_of_sponsored_product_ad": "0",
+    "number_of_display_ad": "0",
+    "number_of_brand_store_ad": "0",
+    "detected_primary_category_name": "Mũ 1/2",
+    "detected_l1_category_name": "Ô Tô - Xe Máy - Xe Đạp",
+    "category_l1_name": "Ô Tô - Xe Máy - Xe Đạp",
+    "selected_sort_option": "top_seller",
+    "seller_product_sku": "6508973820034,7945614472462,4114396339328,5596024446588,9921505485335,2657162466904,1901040598182,7110282665699,8039951339125,8577917076710",
+    "search_experiment_variant": "",
+    "search_request": "http://thanos.tiki.services/full/v2/products?sort=top_seller&page=1&q=n%C3%B3n+b%E1%BA%A3o+hi%E1%BB%83m",
+    "search_location": "VN039006001"
+  },
+  "trace_id": "Cx9iThzfsYCHmISW",
+  "open_telemetry_trace_id": "910b07d08d4e173ea239ff92151abd86",
+  "query_info": {
+    "delivery_zone": "VN039006001",
+    "trackity_id": "43771e75-7224-b43b-ef81-3161be736033",
+    "url": "http://thanos.tiki.services/full/v2/products?sort=top_seller&page=1&q=n%C3%B3n+b%E1%BA%A3o+hi%E1%BB%83m",
+    "ip": "10.228.0.76",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "params": {
+      "q": "nón bảo hiểm",
+      "sort": "top_seller",
+      "page": "1"
+    }
+  },
+  "layout_type": "grid_view"
+}
