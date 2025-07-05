@@ -9,14 +9,15 @@ headers = {
 
 try:
     all_data = []
-    for page in range(1, 15):  
-        api_url = f"https://tiki.vn/api/v2/products?limit=100&sort=top_seller&q=m%C4%A9+ph%E1%BA%A9m&page={page}"
+    for page in range(1, 3):  
+        api_url = f"https://tiki.vn/api/personalish/v1/blocks/listings?limit=20&aggregations=2&version=home-persionalized&trackity_id=4471f252-df28-9379-7e47-68a9e4baef6c&category=1520&page={page}&urlKey=lam-dep-suc-khoe"
+        # api_url = f"https://tiki.vn/api/v2/products?limit=20&sort=top_seller&q=m%C4%A9+ph%E1%BA%A9m&page={page}"
         # api_url = f"https://tiki.vn/api/v2/products?limit=40&sort=top_seller&q=m%C5%A9+b%E1%BA%A3o+hi%E1%BB%83m&page={page}"
         response = requests.get(api_url, headers=headers)
         response.raise_for_status()
         data = response.json()
         all_data.extend(data["data"])  
-        time.sleep(0.2)  # 
+        time.sleep(1)  # 
 
     with open("tiki_products.json", "w", encoding="utf-8") as file:
         json.dump(all_data, file, ensure_ascii=False, indent=4)

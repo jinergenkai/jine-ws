@@ -1,0 +1,5 @@
+chardet
+openpyxl
+xlsxwriter
+pandas
+requests
