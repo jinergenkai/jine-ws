@@ -32,7 +32,7 @@ def main():
         text = data.decode("utf-8")
         if text:
             print(f"Gõ: {text}")
-            pyautogui.typewrite(text, interval=0.1)
+            pyautogui.typewrite(text, interval=0.05)
         conn.close()
 
 if __name__ == "__main__":
