@@ -22,19 +22,20 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Configure pip for better timeout handling
-RUN pip config set global.timeout 300 && \
+RUN pip config set global.timeout 3600 && \
     pip config set global.retries 2
 
 # Install dependencies except torch/torchvision
 RUN grep -v "^torch" requirements.txt > requirements-no-torch.txt && \
-    pip install --no-cache-dir --timeout 300 -r requirements-no-torch.txt && \
+    pip install --no-cache-dir --timeout 3600 -r requirements-no-torch.txt && \
     rm requirements-no-torch.txt
 
 # Install PyTorch with CUDA support
-RUN pip install --no-cache-dir --timeout 300 \
+# IMPORTANT: --index-url must come BEFORE package names
+RUN pip install --no-cache-dir --timeout 3600 \
+    --index-url https://download.pytorch.org/whl/cu118 \
     torch \
-    torchvision \
-    --index-url https://download.pytorch.org/whl/cu118
+    torchvision
 
 # Copy application code
 COPY api.py .

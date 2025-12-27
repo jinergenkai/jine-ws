@@ -16,22 +16,22 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Configure pip for better timeout handling
-RUN pip config set global.timeout 300 && \
+RUN pip config set global.timeout 3600 && \
     pip config set global.retries 2
 
 # Install dependencies except torch
 RUN grep -v "^torch" requirements.txt > requirements-no-torch.txt && \
-    pip install --no-cache-dir --timeout 300 -r requirements-no-torch.txt && \
+    pip install --no-cache-dir --timeout 3600 -r requirements-no-torch.txt && \
     rm requirements-no-torch.txt
 
 # Install PyTorch based on device type
 ARG DEVICE
 RUN if [ "$DEVICE" = "cuda" ]; then \
         echo "Installing PyTorch with CUDA support..." && \
-        pip install --no-cache-dir --timeout 300 torch torchvision --index-url https://download.pytorch.org/whl/cu118; \
+        pip install --no-cache-dir --timeout 3600 --index-url https://download.pytorch.org/whl/cu118 torch torchvision; \
     else \
         echo "Installing PyTorch CPU version..." && \
-        pip install --no-cache-dir --timeout 300 torch torchvision --index-url https://download.pytorch.org/whl/cpu; \
+        pip install --no-cache-dir --timeout 3600 --index-url https://download.pytorch.org/whl/cpu torch torchvision; \
     fi
 
 # Copy application code
