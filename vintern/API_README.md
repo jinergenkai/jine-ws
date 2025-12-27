@@ -17,10 +17,10 @@ python api.py
 Or using uvicorn directly:
 
 ```bash
-uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+uvicorn api:app --host 0.0.0.0 --port 11200 --reload
 ```
 
-The API will be available at `http://localhost:8000`
+The API will be available at `http://localhost:11200`
 
 ## API Endpoints
 
@@ -55,7 +55,7 @@ import requests
 
 with open('image.jpg', 'rb') as f:
     files = {'file': f}
-    response = requests.post('http://localhost:8000/extract', files=files)
+    response = requests.post('http://localhost:11200/extract', files=files)
     result = response.json()
     print(result['text'])
 ```
@@ -63,7 +63,7 @@ with open('image.jpg', 'rb') as f:
 ### Using curl
 
 ```bash
-curl -X POST "http://localhost:8000/extract" \
+curl -X POST "http://localhost:11200/extract" \
   -H "accept: application/json" \
   -H "Content-Type: multipart/form-data" \
   -F "file=@test-image.jpg"
@@ -72,7 +72,7 @@ curl -X POST "http://localhost:8000/extract" \
 ### With custom question
 
 ```bash
-curl -X POST "http://localhost:8000/extract" \
+curl -X POST "http://localhost:11200/extract" \
   -H "accept: application/json" \
   -H "Content-Type: multipart/form-data" \
   -F "file=@test-image.jpg" \
@@ -88,8 +88,8 @@ python client_example.py
 ## API Documentation
 
 Once the server is running, you can access:
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+- Swagger UI: `http://localhost:11200/docs`
+- ReDoc: `http://localhost:11200/redoc`
 
 ## Requirements
 

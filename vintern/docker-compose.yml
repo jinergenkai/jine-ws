@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile.cpu
     container_name: vintern-cpu
     ports:
-      - "11200:8000"
+      - "11200:11200"
     environment:
       - DEVICE=cpu
     volumes:
@@ -28,7 +28,7 @@ services:
       dockerfile: Dockerfile.gpu
     container_name: vintern-gpu
     ports:
-      - "11200:8000"
+      - "11200:11200"
     environment:
       - DEVICE=cuda
     volumes:
