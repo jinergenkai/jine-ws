@@ -21,7 +21,6 @@ RUN pip install --no-cache-dir \
 
 # Install PyTorch CPU
 RUN pip install --no-cache-dir \
-    --index-url https://download.pytorch.org/whl/cpu \
     torch torchvision
 
 ENV DEVICE=cpu
