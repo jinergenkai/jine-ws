@@ -1,62 +1,36 @@
-# GPU-optimized Dockerfile for Vintern OCR API
-# Requires NVIDIA Docker runtime
+FROM nvidia/cuda:11.8.0-runtime-ubuntu22.04
 
-FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
-
-# Install Python 3.10
+# Install Python
 RUN apt-get update && apt-get install -y \
     python3.10 \
-    python3.10-dev \
     python3-pip \
-    git \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Set Python 3.10 as default
-RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1 && \
-    update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
-
 WORKDIR /app
 
-# Copy requirements
-COPY requirements.txt .
-
-# Configure pip for better timeout handling
-RUN pip config set global.timeout 3600 && \
-    pip config set global.retries 2
-
-# Install dependencies except torch/torchvision
-RUN grep -v -E "^torch" requirements.txt | grep -v -E "^torchvision" > requirements-no-torch.txt && \
-    pip install --no-cache-dir --timeout 3600 -r requirements-no-torch.txt && \
-    rm requirements-no-torch.txt
-
-# Install PyTorch with CUDA support
-# IMPORTANT: --index-url must come BEFORE package names
-RUN pip install --no-cache-dir --timeout 3600 \
-    --index-url https://download.pytorch.org/whl/cu118 \
-    torch \
-    torchvision
-
-# Copy application code
+# Copy application
 COPY api.py .
 
-# Create model cache directory
-RUN mkdir -p /root/.cache/huggingface
+# Install Python packages
+RUN pip install --no-cache-dir \
+    fastapi \
+    uvicorn[standard] \
+    python-multipart \
+    transformers \
+    Pillow \
+    numpy \
+    einops \
+    timm
 
-# Expose port
+# Install PyTorch with CUDA
+RUN pip install --no-cache-dir \
+    --index-url https://download.pytorch.org/whl/cu118 \
+    torch torchvision
+
+ENV DEVICE=cuda
+ENV PYTHONUNBUFFERED=1
+
 EXPOSE 8000
 
-# Environment variables
-ENV PYTHONUNBUFFERED=1
-ENV DEVICE=cuda
-ENV MAX_FILE_SIZE=10485760
-ENV ALLOWED_ORIGINS=*
-ENV NVIDIA_VISIBLE_DEVICES=all
-ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD curl -f http://localhost:8000/health || exit 1
-
-# Run the application
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]

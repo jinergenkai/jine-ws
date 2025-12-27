@@ -1,64 +1,43 @@
-.PHONY: help build-cpu build-gpu up-cpu up-gpu down logs health clean test
+.PHONY: help cpu gpu stop logs clean health test
 
 help:
-	@echo "Vintern OCR API - Docker Commands"
+	@echo "Vintern OCR API - Commands"
 	@echo ""
-	@echo "CPU Version:"
-	@echo "  make build-cpu    - Build CPU image"
-	@echo "  make up-cpu       - Start CPU service"
-	@echo "  make down-cpu     - Stop CPU service"
-	@echo ""
-	@echo "GPU Version:"
-	@echo "  make build-gpu    - Build GPU image"
-	@echo "  make up-gpu       - Start GPU service"
-	@echo "  make down-gpu     - Stop GPU service"
-	@echo ""
-	@echo "General:"
-	@echo "  make logs         - View logs"
-	@echo "  make health       - Check health status"
-	@echo "  make clean        - Remove all containers and images"
-	@echo "  make test         - Test API with sample image"
+	@echo "  make cpu      - Run CPU version"
+	@echo "  make gpu      - Run GPU version"
+	@echo "  make stop     - Stop all services"
+	@echo "  make logs     - View logs"
+	@echo "  make health   - Check health"
+	@echo "  make test     - Test API"
+	@echo "  make clean    - Clean everything"
 
-# CPU Commands
-build-cpu:
-	docker-compose --profile cpu build
-
-up-cpu:
-	docker-compose --profile cpu up -d
+cpu:
+	@echo "Starting CPU version..."
+	docker-compose --profile cpu up -d --build
 	@echo "API running at http://localhost:11200"
-	@echo "Docs at http://localhost:11200/docs"
 
-down-cpu:
-	docker-compose --profile cpu down
-
-# GPU Commands
-build-gpu:
-	docker-compose --profile gpu build
-
-up-gpu:
-	docker-compose --profile gpu up -d
+gpu:
+	@echo "Starting GPU version..."
+	docker-compose --profile gpu up -d --build
 	@echo "API running at http://localhost:11200"
-	@echo "Docs at http://localhost:11200/docs"
 
-down-gpu:
-	docker-compose --profile gpu down
+stop:
+	docker-compose down
 
-# General Commands
 logs:
 	docker-compose logs -f
 
 health:
-	@echo "Checking service health..."
 	@curl -s http://localhost:11200/health | python -m json.tool || echo "Service not running"
 
-clean:
-	docker-compose --profile cpu down -v
-	docker-compose --profile gpu down -v
-	docker system prune -f
-
 test:
-	@echo "Testing API (requires service to be running)..."
+	@echo "Testing API..."
 	@curl -X POST http://localhost:11200/extract \
 		-F "file=@test-image.jpg" \
 		-F "max_num=6" \
 		-F "max_new_tokens=1024" | python -m json.tool
+
+clean:
+	docker-compose down -v
+	docker rmi vintern-cpu vintern-gpu 2>/dev/null || true
+	@echo "Cleaned!"
