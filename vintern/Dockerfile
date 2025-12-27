@@ -19,8 +19,8 @@ COPY requirements.txt .
 RUN pip config set global.timeout 3600 && \
     pip config set global.retries 2
 
-# Install dependencies except torch
-RUN grep -v "^torch" requirements.txt > requirements-no-torch.txt && \
+# Install dependencies except torch/torchvision
+RUN grep -v -E "^torch" requirements.txt | grep -v -E "^torchvision" > requirements-no-torch.txt && \
     pip install --no-cache-dir --timeout 3600 -r requirements-no-torch.txt && \
     rm requirements-no-torch.txt
 
