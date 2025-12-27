@@ -5,9 +5,7 @@ services:
   vintern-ocr-cpu:
     build:
       context: .
-      dockerfile: Dockerfile
-      args:
-        DEVICE: cpu
+      dockerfile: Dockerfile.cpu
     container_name: vintern-ocr-cpu
     ports:
       - "11200:8000"

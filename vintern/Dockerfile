@@ -1,7 +1,7 @@
-# Multi-stage build for production-ready Vintern OCR API
-# Supports both CPU and GPU (CUDA)
+# Production-ready Vintern OCR API
+# Build for CPU or GPU based on DEVICE arg
 
-ARG DEVICE=cuda
+ARG DEVICE=cpu
 FROM python:3.10-slim as base
 
 # Install system dependencies
@@ -12,17 +12,21 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-# Copy requirements first for better caching
+# Copy requirements (without torch/torchvision)
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Install dependencies except torch
+RUN grep -v "^torch" requirements.txt > requirements-no-torch.txt && \
+    pip install --no-cache-dir -r requirements-no-torch.txt
 
 # Install PyTorch based on device type
 ARG DEVICE
 RUN if [ "$DEVICE" = "cuda" ]; then \
-        pip uninstall -y torch torchvision && \
+        echo "Installing PyTorch with CUDA support..." && \
         pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cu118; \
+    else \
+        echo "Installing PyTorch CPU version..." && \
+        pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu; \
     fi
 
 # Copy application code
