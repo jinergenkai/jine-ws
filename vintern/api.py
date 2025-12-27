@@ -207,7 +207,7 @@ async def root():
 async def extract_text(
     file: UploadFile = File(...),
     question: Optional[str] = Form(None),
-    max_num: int = Form(6),
+    max_num: int = Form(12),
     max_new_tokens: int = Form(2048)
 ):
     """
