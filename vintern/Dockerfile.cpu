@@ -14,13 +14,17 @@ WORKDIR /app
 # Copy requirements
 COPY requirements.txt .
 
+# Configure pip for better timeout handling
+RUN pip config set global.timeout 300 && \
+    pip config set global.retries 2
+
 # Install dependencies except torch/torchvision
 RUN grep -v "^torch" requirements.txt > requirements-no-torch.txt && \
-    pip install --no-cache-dir -r requirements-no-torch.txt && \
+    pip install --no-cache-dir --timeout 300 -r requirements-no-torch.txt && \
     rm requirements-no-torch.txt
 
 # Install PyTorch CPU version (much smaller than CUDA)
-RUN pip install --no-cache-dir \
+RUN pip install --no-cache-dir --timeout 300 \
     torch \
     torchvision \
     --index-url https://download.pytorch.org/whl/cpu

@@ -15,18 +15,23 @@ WORKDIR /app
 # Copy requirements (without torch/torchvision)
 COPY requirements.txt .
 
+# Configure pip for better timeout handling
+RUN pip config set global.timeout 300 && \
+    pip config set global.retries 2
+
 # Install dependencies except torch
 RUN grep -v "^torch" requirements.txt > requirements-no-torch.txt && \
-    pip install --no-cache-dir -r requirements-no-torch.txt
+    pip install --no-cache-dir --timeout 300 -r requirements-no-torch.txt && \
+    rm requirements-no-torch.txt
 
 # Install PyTorch based on device type
 ARG DEVICE
 RUN if [ "$DEVICE" = "cuda" ]; then \
         echo "Installing PyTorch with CUDA support..." && \
-        pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cu118; \
+        pip install --no-cache-dir --timeout 300 torch torchvision --index-url https://download.pytorch.org/whl/cu118; \
     else \
         echo "Installing PyTorch CPU version..." && \
-        pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu; \
+        pip install --no-cache-dir --timeout 300 torch torchvision --index-url https://download.pytorch.org/whl/cpu; \
     fi
 
 # Copy application code
