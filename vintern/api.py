@@ -7,15 +7,52 @@ from torchvision.transforms.functional import InterpolationMode
 from transformers import AutoModel, AutoTokenizer
 from fastapi import FastAPI, File, UploadFile, HTTPException, Form
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
 import logging
 import traceback
+import os
+import argparse
+import time
+from contextlib import asynccontextmanager
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Vintern OCR API", version="1.0.0")
+# Configuration from environment
+MAX_FILE_SIZE = int(os.getenv('MAX_FILE_SIZE', 10 * 1024 * 1024))  # 10MB default
+ALLOWED_ORIGINS = os.getenv('ALLOWED_ORIGINS', '*').split(',')
+MODEL_NAME = os.getenv('MODEL_NAME', '5CD-AI/Vintern-1B-v3_5')
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    logger.info("API starting up...")
+    yield
+    # Shutdown
+    logger.info("API shutting down...")
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+app = FastAPI(
+    title="Vintern OCR API",
+    version="1.0.0",
+    description="Production-ready OCR API for extracting text from images",
+    lifespan=lifespan
+)
+
+# CORS middleware for internal service integration
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 IMAGENET_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_STD = (0.229, 0.224, 0.225)
@@ -85,30 +122,58 @@ def process_image(image: Image.Image, input_size=448, max_num=12):
     pixel_values = torch.stack(pixel_values)
     return pixel_values
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"Using device: {device}")
+# Device configuration
+# Priority: Command line args > Environment variable > Auto-detect
+def get_device():
+    # Check environment variable
+    force_device = os.getenv('DEVICE', None)
 
-print("Loading model...")
-if torch.cuda.is_available():
+    if force_device:
+        force_device = force_device.lower()
+        if force_device == 'cpu':
+            print("DEVICE=cpu set in environment - forcing CPU mode")
+            return torch.device('cpu')
+        elif force_device == 'cuda':
+            if torch.cuda.is_available():
+                print("DEVICE=cuda set in environment - using GPU")
+                return torch.device('cuda')
+            else:
+                print("WARNING: DEVICE=cuda set but CUDA not available, falling back to CPU")
+                return torch.device('cpu')
+
+    # Auto-detect
+    if torch.cuda.is_available():
+        return torch.device('cuda')
+    else:
+        return torch.device('cpu')
+
+device = get_device()
+print(f"Using device: {device}")
+if device.type == 'cuda':
+    print(f"GPU: {torch.cuda.get_device_name(0)}")
+    print(f"CUDA Version: {torch.version.cuda}")
+
+logger.info(f"Loading model: {MODEL_NAME}")
+if device.type == 'cuda':
     model = AutoModel.from_pretrained(
-        "5CD-AI/Vintern-1B-v3_5",
+        MODEL_NAME,
         torch_dtype=torch.bfloat16,
         low_cpu_mem_usage=True,
         trust_remote_code=True,
         use_flash_attn=False,
     ).eval().cuda()
 else:
-    print("CUDA not available, loading model on CPU (this will be slower)...")
+    logger.info("Loading model on CPU (this will be slower)...")
     model = AutoModel.from_pretrained(
-        "5CD-AI/Vintern-1B-v3_5",
+        MODEL_NAME,
         torch_dtype=torch.float32,
         low_cpu_mem_usage=True,
         trust_remote_code=True,
         use_flash_attn=False,
     ).eval()
 
-tokenizer = AutoTokenizer.from_pretrained("5CD-AI/Vintern-1B-v3_5", trust_remote_code=True, use_fast=False)
-print("Model loaded successfully!")
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True, use_fast=False)
+logger.info(f"Model loaded successfully! Max file size: {MAX_FILE_SIZE / 1024 / 1024:.1f}MB")
 
 class OCRResponse(BaseModel):
     text: str
@@ -134,18 +199,28 @@ async def extract_text(
     - max_num: Maximum number of image blocks (default: 12, increase for large/detailed images)
     - max_new_tokens: Maximum length of output text (default: 4096, increase for images with lots of text)
     """
+    start_time = time.time()
+
     if file.content_type and not file.content_type.startswith('image/'):
         raise HTTPException(status_code=400, detail="File must be an image")
 
     try:
         logger.info(f"Receiving file: {file.filename}")
         contents = await file.read()
-        logger.info(f"File size: {len(contents)} bytes")
+
+        # Validate file size
+        if len(contents) > MAX_FILE_SIZE:
+            raise HTTPException(
+                status_code=413,
+                detail=f"File too large. Max size: {MAX_FILE_SIZE / 1024 / 1024:.1f}MB"
+            )
+
+        logger.info(f"File size: {len(contents)} bytes ({len(contents) / 1024:.1f}KB)")
 
         image = Image.open(io.BytesIO(contents)).convert('RGB')
         logger.info(f"Image size: {image.size}")
 
-        dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
+        dtype = torch.bfloat16 if device.type == 'cuda' else torch.float32
         logger.info(f"Processing image with dtype: {dtype}, device: {device}")
         pixel_values = process_image(image, max_num=max_num).to(dtype).to(device)
         logger.info(f"Pixel values shape: {pixel_values.shape}")
@@ -165,6 +240,7 @@ async def extract_text(
         )
 
         logger.info("Starting inference...")
+        inference_start = time.time()
         response, history = model.chat(
             tokenizer,
             pixel_values,
@@ -173,7 +249,11 @@ async def extract_text(
             history=None,
             return_history=True
         )
-        logger.info(f"Inference complete. Response length: {len(response)}")
+        inference_time = time.time() - inference_start
+        total_time = time.time() - start_time
+
+        logger.info(f"Inference complete. Response length: {len(response)} chars")
+        logger.info(f"Timing - Inference: {inference_time:.2f}s, Total: {total_time:.2f}s")
 
         return OCRResponse(text=response, question=question)
 
@@ -184,7 +264,13 @@ async def extract_text(
 
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy", "model": "5CD-AI/Vintern-1B-v3_5"}
+    return {
+        "status": "healthy",
+        "model": "5CD-AI/Vintern-1B-v3_5",
+        "device": str(device),
+        "cuda_available": torch.cuda.is_available(),
+        "gpu_name": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None
+    }
 
 if __name__ == "__main__":
     import uvicorn

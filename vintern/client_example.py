@@ -1,6 +1,6 @@
 import requests
 
-def extract_text_from_image(image_path: str, api_url: str = "http://localhost:8000/extract"):
+def extract_text_from_image(image_path: str, api_url: str = "http://localhost:11200/extract"):
     """
     Example client to use the Vintern OCR API
 
@@ -25,7 +25,7 @@ def extract_text_from_image(image_path: str, api_url: str = "http://localhost:80
             print("Response text:", response.text)
         return None
 
-def extract_with_custom_question(image_path: str, question: str, api_url: str = "http://localhost:8000/extract"):
+def extract_with_custom_question(image_path: str, question: str, api_url: str = "http://localhost:11200/extract"):
     """
     Extract text with a custom question
 
@@ -52,7 +52,7 @@ def extract_with_custom_question(image_path: str, question: str, api_url: str = 
             print("Response text:", response.text)
         return None
 
-def extract_full_text(image_path: str, max_num: int = 12, max_new_tokens: int = 4096, api_url: str = "http://localhost:8000/extract"):
+def extract_full_text(image_path: str, max_num: int = 12, max_new_tokens: int = 4096, api_url: str = "http://localhost:11200/extract"):
     """
     Extract full text from image with lots of text
 

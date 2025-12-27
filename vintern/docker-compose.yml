@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  # CPU version - for development or servers without GPU
+  vintern-ocr-cpu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DEVICE: cpu
+    container_name: vintern-ocr-cpu
+    ports:
+      - "11200:8000"
+    environment:
+      - DEVICE=cpu
+      - MAX_FILE_SIZE=10485760  # 10MB
+      - ALLOWED_ORIGINS=*
+      - MODEL_NAME=5CD-AI/Vintern-1B-v3_5
+    volumes:
+      # Cache model to avoid re-downloading
+      - huggingface-cache:/root/.cache/huggingface
+      # Optional: mount local model cache
+      # - ~/.cache/huggingface:/root/.cache/huggingface
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    # Resource limits for CPU version
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
+          memory: 4G
+    profiles:
+      - cpu
+
+  # GPU version - for production with NVIDIA GPU
+  vintern-ocr-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu
+    container_name: vintern-ocr-gpu
+    ports:
+      - "11200:8000"
+    environment:
+      - DEVICE=cuda
+      - MAX_FILE_SIZE=10485760  # 10MB
+      - ALLOWED_ORIGINS=*
+      - MODEL_NAME=5CD-AI/Vintern-1B-v3_5
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      # Cache model to avoid re-downloading
+      - huggingface-cache:/root/.cache/huggingface
+      # Optional: mount local model cache
+      # - ~/.cache/huggingface:/root/.cache/huggingface
+    restart: unless-stopped
+    runtime: nvidia  # Requires NVIDIA Docker runtime
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s  # GPU initialization takes longer
+    # Resource limits for GPU version
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 16G
+        reservations:
+          memory: 8G
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    profiles:
+      - gpu
+
+volumes:
+  huggingface-cache:
+    driver: local
