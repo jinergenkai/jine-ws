@@ -178,6 +178,8 @@ logger.info(f"Model loaded successfully! Max file size: {MAX_FILE_SIZE / 1024 / 
 class OCRResponse(BaseModel):
     text: str
     question: str
+    inference_time: float
+    total_time: float
 
 @app.get("/")
 async def root():
@@ -187,7 +189,7 @@ async def root():
 async def extract_text(
     file: UploadFile = File(...),
     question: Optional[str] = Form(None),
-    max_num: int = Form(12),
+    max_num: int = Form(6),
     max_new_tokens: int = Form(4096)
 ):
     """
@@ -195,9 +197,9 @@ async def extract_text(
 
     Parameters:
     - file: Image file to process
-    - question: Custom question (default: extract main information in markdown)
-    - max_num: Maximum number of image blocks (default: 12, increase for large/detailed images)
-    - max_new_tokens: Maximum length of output text (default: 4096, increase for images with lots of text)
+    - question: Custom question (default: Trích xuất đầy đủ toàn bộ ra dữ liệu)
+    - max_num: Maximum number of image blocks (default: 6)
+    - max_new_tokens: Maximum length of output text (default: 4096)
     """
     start_time = time.time()
 
@@ -226,7 +228,7 @@ async def extract_text(
         logger.info(f"Pixel values shape: {pixel_values.shape}")
 
         if question is None:
-            question = '<image>\nTrích xuất thông tin chính trong ảnh và trả về dạng markdown.'
+            question = '<image>\nTrích xuất đầy đủ toàn bộ ra dữ liệu'
         else:
             question = f'<image>\n{question}'
 
@@ -255,7 +257,12 @@ async def extract_text(
         logger.info(f"Inference complete. Response length: {len(response)} chars")
         logger.info(f"Timing - Inference: {inference_time:.2f}s, Total: {total_time:.2f}s")
 
-        return OCRResponse(text=response, question=question)
+        return OCRResponse(
+            text=response,
+            question=question,
+            inference_time=round(inference_time, 2),
+            total_time=round(total_time, 2)
+        )
 
     except Exception as e:
         logger.error(f"Error processing image: {str(e)}")
