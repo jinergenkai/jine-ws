@@ -12,7 +12,12 @@ services:
     environment:
       - DEVICE=cpu
     volumes:
-      - model-cache:/root/.cache/huggingface
+      # Use local cache (faster - reuses downloaded model)
+      # Linux/Mac: ~/.cache/huggingface
+      # Windows: %USERPROFILE%\.cache\huggingface
+      - ${HOME}/.cache/huggingface:/root/.cache/huggingface
+      # Or use Docker volume (slower first run)
+      # - model-cache:/root/.cache/huggingface
     restart: unless-stopped
     profiles: [cpu]
 
@@ -27,7 +32,12 @@ services:
     environment:
       - DEVICE=cuda
     volumes:
-      - model-cache:/root/.cache/huggingface
+      # Use local cache (faster - reuses downloaded model)
+      # Linux/Mac: ~/.cache/huggingface
+      # Windows: %USERPROFILE%\.cache\huggingface
+      - ${HOME}/.cache/huggingface:/root/.cache/huggingface
+      # Or use Docker volume (slower first run)
+      # - model-cache:/root/.cache/huggingface
     runtime: nvidia
     restart: unless-stopped
     profiles: [gpu]

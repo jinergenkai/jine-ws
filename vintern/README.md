@@ -4,6 +4,17 @@ Simple OCR API using Vintern-1B-v3_5 model.
 
 ## Quick Start
 
+### Setup (Windows Only)
+
+Set HOME environment variable first:
+```bash
+# PowerShell
+$env:HOME = $env:USERPROFILE
+
+# CMD
+set HOME=%USERPROFILE%
+```
+
 ### Using Makefile (Recommended)
 
 ```bash
