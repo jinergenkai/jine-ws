@@ -155,22 +155,40 @@ if device.type == 'cuda':
 
 logger.info(f"Loading model: {MODEL_NAME}")
 if device.type == 'cuda':
-    model = AutoModel.from_pretrained(
-        MODEL_NAME,
-        torch_dtype=torch.bfloat16,
-        low_cpu_mem_usage=True,
-        trust_remote_code=True,
-        use_flash_attn=False,
-    ).eval().cuda()
+    try:
+        model = AutoModel.from_pretrained(
+            MODEL_NAME,
+            torch_dtype=torch.bfloat16,
+            low_cpu_mem_usage=True,
+            trust_remote_code=True,
+            use_flash_attn=False,
+        ).eval().cuda()
+    except:
+        logger.warning("Failed with use_flash_attn=False, trying without it...")
+        model = AutoModel.from_pretrained(
+            MODEL_NAME,
+            torch_dtype=torch.bfloat16,
+            low_cpu_mem_usage=True,
+            trust_remote_code=True,
+        ).eval().cuda()
 else:
     logger.info("Loading model on CPU (this will be slower)...")
-    model = AutoModel.from_pretrained(
-        MODEL_NAME,
-        torch_dtype=torch.float32,
-        low_cpu_mem_usage=True,
-        trust_remote_code=True,
-        use_flash_attn=False,
-    ).eval()
+    try:
+        model = AutoModel.from_pretrained(
+            MODEL_NAME,
+            torch_dtype=torch.float32,
+            low_cpu_mem_usage=True,
+            trust_remote_code=True,
+            use_flash_attn=False,
+        ).eval()
+    except:
+        logger.warning("Failed with use_flash_attn=False, trying without it...")
+        model = AutoModel.from_pretrained(
+            MODEL_NAME,
+            torch_dtype=torch.float32,
+            low_cpu_mem_usage=True,
+            trust_remote_code=True,
+        ).eval()
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True, use_fast=False)
 logger.info(f"Model loaded successfully! Max file size: {MAX_FILE_SIZE / 1024 / 1024:.1f}MB")
@@ -189,7 +207,7 @@ async def root():
 async def extract_text(
     file: UploadFile = File(...),
     question: Optional[str] = Form(None),
-    max_num: int = Form(3),
+    max_num: int = Form(6),
     max_new_tokens: int = Form(2048)
 ):
     """
@@ -197,9 +215,9 @@ async def extract_text(
 
     Parameters:
     - file: Image file to process
-    - question: Custom question (default: Trích xuất đầy đủ toàn bộ ra dữ liệu)
+    - question: Custom question (default: Mô tả hình ảnh một cách chi tiết trả về dạng markdown.)
     - max_num: Maximum number of image blocks (default: 6)
-    - max_new_tokens: Maximum length of output text (default: 4096)
+    - max_new_tokens: Maximum length of output text (default: 2048)
     """
     start_time = time.time()
 
@@ -227,8 +245,8 @@ async def extract_text(
         pixel_values = process_image(image, max_num=max_num).to(dtype).to(device)
         logger.info(f"Pixel values shape: {pixel_values.shape}")
 
-        if question is None:
-            question = '<image>\nTrích xuất đầy đủ toàn bộ ra dữ liệu'
+        if question is None or question.strip() == '':
+            question = '<image>\nMô tả hình ảnh một cách chi tiết trả về dạng markdown.'
         else:
             question = f'<image>\n{question}'
 
@@ -238,18 +256,16 @@ async def extract_text(
             max_new_tokens=max_new_tokens,
             do_sample=False,
             num_beams=3,
-            repetition_penalty=2.0,
+            repetition_penalty=3.5,
         )
 
         logger.info("Starting inference...")
         inference_start = time.time()
-        response, history = model.chat(
+        response = model.chat(
             tokenizer,
             pixel_values,
             question,
-            generation_config,
-            history=None,
-            return_history=True
+            generation_config
         )
         inference_time = time.time() - inference_start
         total_time = time.time() - start_time
